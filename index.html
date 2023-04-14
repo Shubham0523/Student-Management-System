@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Student Management</title>
+  </head>
+  <body>
+    <form class="info">
+      <input placeholder="Enter Full Name" type="text" id="fullname" />
+      <input placeholder="Enter Age" type="number" id="age" max="99" />
+      <input
+        placeholder="Enter Class"
+        type="number"
+        min="1"
+        max="12"
+        id="class"
+      />
+    </form>
+    <div class="subjects">
+      <select name="subjects" id="subject">
+        <option id="select" value="">Select Subject</option>
+        <option id="english" value="english">English</option>
+        <option id="maths" value="maths">Maths</option>
+        <option id="computer" value="computer">Computer Science</option>
+        <option id="sports" value="sports">Sports</option>
+      </select>
+    </div>
+    <button id="submit">Submit</button>
+    <button id="clear-data">Clear All Data</button>
+    <div id="result"></div>
+  </body>
+  <script src="./assets/js/index.js"></script>
+</html>
